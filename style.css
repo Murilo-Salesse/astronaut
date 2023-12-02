@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Mulish", sans-serif;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 35rem;
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-wrapper h1 {
+  color: #b52184;
+
+  text-align: center;
+
+  font-size: 3.2rem;
+  font-weight: 900;
+
+  margin-top: 1.7rem;
+}
+
+.header-wrapper p {
+  color: #312d64;
+
+  text-align: center;
+
+  font-size: 2rem;
+  font-weight: 600;
+
+  margin-bottom: 3.5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 5rem;
+
+  padding: 5rem;
+  margin-top: 6rem;
+  background: linear-gradient(96deg, #343193 0%, #302c63 99.68%);
+  background-size: cover;
+}
+
+.informations-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+  width: 36rem;
+  margin: auto;
+  gap: 1rem;
+
+  border-radius: 1.9rem;
+  background: #fff;
+  box-shadow: 0px 3.311px 13.243px 0px rgba(0, 0, 0, 0.25);
+
+  padding: 2rem;
+}
+
+.informations-wrapper h2 {
+  color: #b52184;
+
+  font-size: 2.9rem;
+  font-weight: 900;
+}
+
+.informations-wrapper p {
+  color: #312d64;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  width: 26.5rem;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form h2 {
+  color: #b52184;
+
+  font-size: 3.2rem;
+  font-weight: 900;
+
+  margin-top: 4rem;
+}
+
+.form-wrappers {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  margin-top: 2rem;
+}
+
+.inputs-wrapper,
+.input-text {
+  display: flex;
+  align-items: center;
+
+  width: 30rem;
+
+  padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+  gap: 1.2rem;
+
+  border-radius: 1rem;
+
+  border: 0.13rem solid #312d64;
+}
+
+.inputs-wrapper input {
+  color: #312d64;
+
+  font-family: Mulish;
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  line-height: 1.6rem;
+
+  border: none;
+  outline: none;
+}
+
+.input-text textarea {
+  color: #312d64;
+
+  width: 30rem;
+
+  font-family: Mulish;
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  line-height: 1.6rem;
+
+  border: none;
+  outline: none;
+}
+
+#stars {
+  display: none;
+}
+
+.form-wrappers button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20rem;
+  height: 3rem;
+  padding: 2rem;
+
+  border-radius: 1rem;
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+
+  border: none;
+
+  color: #FFF;
+
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 700;
+
+  line-height: 2.4rem;
+
+  text-transform: capitalize;
+
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.form-wrappers button:hover {
+  background: linear-gradient(96deg, #302e75 0%, #242146 99.68%)
+}
+
+.footer {
+  display: flex;
+  gap: 1rem;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 3.8rem;
+  padding: 3rem;
+
+  margin-top: 4rem;
+
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+}
+
+.footer p {
+  color: #FFF;
+
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* RESPONSIVO */
+@media (min-width: 1320px) {
+  /* SECTION CABECALHO */
+  .astronaut {
+    width: 120rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2.8rem;
+  }
+  .astronaut img {
+    order: 1;
+  }
+
+  .header-wrapper {
+    margin-top: 8rem;
+    margin-right: 15rem;
+    margin-left: 5rem;
+    align-items: flex-start;
+  }
+
+  .header-wrapper h1 {
+    color: #B52184;
+    font-size: 5.8rem;
+    font-style: normal;
+    font-weight: 900;
+  }
+
+  .header-wrapper p {
+    color: #312D64;
+
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+
+  .header-wrapper img {
+    margin-top: 20rem;
+  }
+  /* SECTION CABECALHO */
+
+  /* CARDS */
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    justify-items: center;
+  }
+
+  .informations-wrapper {
+    width: 30rem;
+  }
+  /* CARDS */
+
+  /* FOMR */
+
+  .inputs-wrapper,
+  .input-text {
+    width: 50rem;
+  }
+
+  #stars {
+    display: initial;
+  }
+
+  .form {
+    display: flex;
+    align-items: center;
+    gap: 4.2rem;
+    padding: 0;
+    height: 62rem;
+    margin: 0 auto;
+    background: url(./assets/stars.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .form-inputs {
+    flex: 1;
+    margin-left: 10.9rem;
+  }
+
+  .form #stars {
+    flex: 1;
+  }
+} 
